@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.receiver;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -6,12 +6,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Publisher {
+public class DemoApp {
 
-	@PostMapping("/publisher")
-	public ResponseEntity<String> publisher() {
-		
-		return new ResponseEntity<>("This is publisher",HttpStatus.OK);
-		
+	@PostMapping("/webapp1")
+	public ResponseEntity<String> alertsreceive(){
+		return new ResponseEntity<>("This is WebApplication1", HttpStatus.OK);
 	}
+	
 }
