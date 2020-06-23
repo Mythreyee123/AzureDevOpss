@@ -10,7 +10,7 @@ public class DemoApp {
 
 	@PostMapping("/webapp1")
 	public ResponseEntity<String> alertsreceive(){
-		return new ResponseEntity<>("This is WebApplication1", HttpStatus.OK);
+		return new ResponseEntity<>("This is WebApp1", HttpStatus.OK);
 	}
 	
 }
