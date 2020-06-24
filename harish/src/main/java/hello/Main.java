@@ -21,7 +21,7 @@ public class Main {
 	@RequestMapping("/")
 	public String home() {
 		System.out.println("Jai Ganesh Hare Rama hare Krishna");
-			return "This is from first webapp application";
+			return "This is from first webapp applications1 harish";
 	}
 	
 	@RequestMapping(value = "/{bucket}", method = RequestMethod.GET)
